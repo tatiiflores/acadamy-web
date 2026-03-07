@@ -1,44 +1,72 @@
-/* SECCIÓN CURSOS */
-
-.cursos{
-    padding: 60px;
-    text-align: center;
+/* ===== RESET Y VARIABLES ===== */
+:root {
+    --color-primario: #790505;
+    --color-secundario: #c13939;
+    --color-fondo: #f8f9fa;
+    --color-texto: #333;
+    --color-blanco: #fff;
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --max-width: 1200px;
+    --padding-contenedor: 1rem;
 }
 
-.cursos-container{
-    max-width: 1200px;
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cursos-cards{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+body {
+    font-family: var(--fuente-base);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
 }
 
-.curso-card{
-    width: 280px;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.curso-card img{
-    width: 100%;
-    border-radius: 10px;
+ul {
+    list-style: none;
 }
 
-.curso-card h3{
-    margin: 15px 0;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-.curso-card p{
-    font-size: 14px;
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-contenedor);
 }
 
-.curso-card .btn{
+.btn {
     display: inline-block;
-    margin-top: 10px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-secundario);
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-small:hover {
+    background-color: var(--color-primario);
 }
