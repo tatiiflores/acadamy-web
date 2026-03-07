@@ -1,0 +1,44 @@
+/* SECCIÓN CURSOS */
+
+.cursos{
+    padding: 60px;
+    text-align: center;
+}
+
+.cursos-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cursos-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.curso-card{
+    width: 280px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.curso-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.curso-card h3{
+    margin: 15px 0;
+}
+
+.curso-card p{
+    font-size: 14px;
+}
+
+.curso-card .btn{
+    display: inline-block;
+    margin-top: 10px;
+}
